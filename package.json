@@ -1,0 +1,32 @@
+{
+  "name": "class-selection-form",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "final-form": "4.20.6",
+    "final-form-set-field-data": "^1.0.2",
+    "lodash": "^4.17.21",
+    "node-sass": "^4.12.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-final-form": "6.5.7",
+    "react-scripts": "3.4.4"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

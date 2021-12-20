@@ -1,0 +1,101 @@
+@import '../styles.scss';
+
+
+form {
+  width: 70%;
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+  }
+  margin: 0 auto;
+  .form-field {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    width: 100%;
+    input.form-textbox-input {
+      background-color: rgb(253, 247, 242);
+      box-sizing: border-box;
+      height: 3.2rem;
+      border-radius: 10px;
+      width: 100%;
+      border: 1px solid rgb(180, 180, 187);
+      padding: 0rem 1rem;
+      &.form-error-wrapper {
+        border-color: rgb(228, 10, 10);
+        background-color: rgb(252, 241, 247);
+      }
+    }
+    .form-field-label {
+      text-align: left;
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+  }
+  .form-checkbox-wrapper, .form-radio-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    label, .form-radio-button {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .form-inline-error {
+    display: block;
+    margin-top: 0.5rem;
+    color: rgb(228, 10, 10);
+    font-size: 0.9rem;
+  }
+  .form-checkbox:last-child {
+    position: relative;
+  }
+  .form-inline-error-checkbox {
+    position: absolute;
+    top: 2rem;
+    left: 5px;
+    color: rgb(228, 10, 10);
+  }
+  
+
+  button {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid;
+    border-radius: 2rem;
+    width: 7rem;
+    margin: 0 auto;
+    background-color: rgb(0, 113, 227);
+    color: white;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+  }
+  button.confirm-button {
+    padding: 0.5rem;
+    width: 6rem;
+    background-color: rgb(24, 131, 49);
+  }
+  button[disabled]{
+    border: 1px solid rgb(193, 193, 193);
+    opacity: 0.3;
+    color: rgb(193, 193, 193);
+  }
+  .form-data-wrapper {
+    
+    margin-bottom: 2rem;
+    .form-data-wrapper-title {
+      font-weight: bold;
+    }
+    .form-data-collection {
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: rgb(234, 247, 237);
+      margin-bottom: 1rem;
+      color: rgb(38, 43, 39);
+    }
+  }
+  .note {
+    text-align: center;
+    color: rgb(240, 101, 76);
+    font-size: 0.8rem;
+  }
+}

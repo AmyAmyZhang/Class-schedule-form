@@ -1,0 +1,133 @@
+{
+  "formData": [
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Full Name (Last First)",
+      "name": "name",
+      "isRequired": true,
+      "innerLabel": "",
+      "errorMessage": "Please enter a valid name",
+      "regexPattern": "^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$"
+    },
+    {
+      "id": "email",
+      "type": "text",
+      "label": "Email Address",
+      "name": "email",
+      "isRequired": true,
+      "innerLabel": "",
+      "errorMessage": "Please enter a valid email address",
+      "regexPattern": "^[^w@]+@[^w@]+.[^w@]+$"
+    },
+    {
+      "id": "birthday",
+      "type": "text",
+      "label": "Birthday",
+      "name": "birthday",
+      "isRequired": true,
+      "innerLabel": "DD/MM/YYYY",
+      "errorMessage": "Please enter a date which match the pattern DD/MM/YYYY",
+      "regexPattern": "^(0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])[-/.](19|20)\\d\\d$"
+    },
+    {
+      "id": "study-area",
+      "type": "checkbox",
+      "label": "Please select your area and class schedule",
+      "name": "selected study area",
+      "isRequired": true,
+      "errorMessage": "Pleae select one or more areas",
+      "data": [
+        {
+          "id": "sports",
+          "type": "checkbox",
+          "label": "Sports class",
+          "isRequired": true,
+          "errorMessage": "Pleae select class schedule",
+          "detailErrorMessage": "You cannot take two classes that are in the same date range",
+          "data": [
+            {
+              "id": "sports-class-schedule-option1",
+              "type": "radio",
+              "label": "July 23 to August 23",
+              "name": "scheduled sports class",
+              "date": ["2021/07/23", "2021/08/23"]
+            },
+            {
+              "id": "sports-class-schedule-option2",
+              "type": "radio",
+              "label": "August 26 to September 26",
+              "name": "scheduled sports class",
+              "date": ["2021/08/26", "2021/09/26"]
+            }
+          ]
+        },
+        {
+          "id": "arts",
+          "type": "checkbox",
+          "label": "Arts class",
+          "isRequired": true,
+          "errorMessage": "Pleae select class schedule",
+          "detailErrorMessage": "You cannot take two classes that are in the same date range",
+          "data": [
+            {
+              "id": "arts-class-schedule-option1",
+              "type": "radio",
+              "label": "May 10 to June 10",
+              "name": "scheduled art class",
+              "date": ["2021/05/10", "2021/06/10"]
+            },
+            {
+              "id": "arts-class-schedule-option2",
+              "type": "radio",
+              "label": "July 11 to August 11",
+              "name": "scheduled art class",
+              "date": ["2021/07/11", "2021/08/11"]
+            }
+          ]
+        },
+        {
+          "id": "literature",
+          "type": "checkbox",
+          "label": "Literature class",
+          "isRequired": true,
+          "errorMessage": "Pleae select class schedule",
+          "detailErrorMessage": "You cannot take two classes that are in the same date range",
+          "data": [
+            {
+              "id": "literature-class-schedule",
+              "type": "radio",
+              "label": "July 11 to October 11",
+              "name": "scheduled literature class",
+              "date": ["2021/07/11", "2021/10/11"]
+            }
+          ]
+        },
+        {
+          "id": "music",
+          "type": "checkbox",
+          "label": "Music class",
+          "isRequired": true,
+          "errorMessage": "Pleae select class schedule",
+          "detailErrorMessage": "You cannot take two classes that are in the same date range",
+          "data": [
+            {
+              "id": "music-class-schedule-option1",
+              "type": "radio",
+              "label": "June 9 to July 9",
+              "name": "scheduled music class",
+              "date": ["2021/06/09", "2021/07/09"]
+            },
+            {
+              "id": "music-class-schedule-option2",
+              "type": "radio",
+              "label": "August 9 to September 9",
+              "name": "scheduled music class",
+              "date": ["2021/08/09", "2021/09/09"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
